@@ -6,7 +6,7 @@ module.exports = [
   {
     watch: true,
     entry: {
-      js: './src/babel/entry.js'
+      js: ['babel-polyfill','./src/babel/entry.js']
     },
     output: {
       path: `${__dirname}/public/js/`,
