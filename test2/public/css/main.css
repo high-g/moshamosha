@@ -46,6 +46,31 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }.wrapper {
-  width: 100%; }
+  width: 90%;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header .header-menu {
+    display: flex; }
+    .header .header-menu .header-menu-items {
+      margin: 0 10px 0; }
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  .content .content-sub {
+    width: 20%;
+    height: 500px;
+    background: #fab; }
+  .content .content-main {
+    width: calc(95% - 20%);
+    height: 500px;
+    background: #bfc; }
 
 /*# sourceMappingURL=main.css.map*/
