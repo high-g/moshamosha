@@ -70,6 +70,8 @@ table {
     top: calc(50% - 60px);
     left: calc(50% - 80px);
     transition: 0.3s ease-in-out; }
+    #main #circle:hover {
+      cursor: pointer; }
     #main #circle.off {
       left: 50%;
       background: #fff; }

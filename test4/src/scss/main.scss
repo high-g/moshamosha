@@ -34,6 +34,10 @@ $colorChange: #999;
     left: calc(50% - 80px);
     transition: $speed;
     
+    &:hover {
+      cursor: pointer;
+    }
+    
     &.off {
       left: 50%;
       background: #fff;
