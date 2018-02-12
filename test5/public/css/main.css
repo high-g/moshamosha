@@ -52,7 +52,7 @@ table {
   .wrap .header {
     width: 100%;
     height: 100vh;
-    background: #000;
+    background: #222;
     color: #fff; }
     .wrap .header .header-ttl {
       position: absolute;
@@ -70,8 +70,43 @@ table {
       font-size: 0.9rem;
       line-height: 150%;
       letter-spacing: 0.1rem; }
+    .wrap .header .header-navBtn {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #000;
+      cursor: pointer;
+      transition: .3s; }
+      .wrap .header .header-navBtn:before {
+        width: 22px;
+        position: absolute;
+        left: 29px;
+        display: block;
+        content: '';
+        border: none;
+        background: #fff;
+        height: 2px;
+        top: 32px; }
+      .wrap .header .header-navBtn:after {
+        width: 22px;
+        position: absolute;
+        left: 29px;
+        display: block;
+        content: '';
+        border-top: solid 2px #fff;
+        border-bottom: solid 2px #fff;
+        height: 5px;
+        top: 39px; }
+      .wrap .header .header-navBtn:hover {
+        background: #fff; }
+        .wrap .header .header-navBtn:hover:before {
+          background: #000; }
+        .wrap .header .header-navBtn:hover:after {
+          border-color: #000; }
   .wrap .footer {
-    width: 100%;
+    width: calc(100% - 80px);
     height: 175px;
     background: #222;
     color: #999;
@@ -80,11 +115,23 @@ table {
       font-size: 0.7rem;
       margin-bottom: 70px; }
       .wrap .footer .footer-menu .footer-menu-item {
-        display: inline-block; }
+        display: inline-block;
+        transition: .3s; }
         .wrap .footer .footer-menu .footer-menu-item:first-child {
           margin-right: 10px; }
         .wrap .footer .footer-menu .footer-menu-item:not(:first-child) {
           margin: 0 10px; }
+        .wrap .footer .footer-menu .footer-menu-item a {
+          transition: .3s;
+          text-decoration: none; }
+        .wrap .footer .footer-menu .footer-menu-item a:link {
+          color: #999; }
+        .wrap .footer .footer-menu .footer-menu-item a:visited {
+          color: #999; }
+        .wrap .footer .footer-menu .footer-menu-item a:hover {
+          color: #fff; }
+        .wrap .footer .footer-menu .footer-menu-item a:active {
+          color: #999; }
     .wrap .footer .footer-ttl {
       font-weight: bold;
       font-size: 1.6rem;
