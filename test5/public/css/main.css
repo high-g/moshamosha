@@ -45,13 +45,30 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}.wrap {
-  width: 100%; }
+}@charset "UTF-8";
+.wrap {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3", Meiryo, sans-serif; }
   .wrap .header {
     width: 100%;
     height: 100vh;
     background: #000;
     color: #fff; }
+    .wrap .header .header-ttl {
+      position: absolute;
+      top: 80px;
+      left: 80px; }
+      .wrap .header .header-ttl .header-ttl-main {
+        font-weight: bold;
+        margin-bottom: 20px; }
+        .wrap .header .header-ttl .header-ttl-main .header-ttl-main-catch {
+          font-size: 6rem;
+          margin-bottom: 15px; }
+        .wrap .header .header-ttl .header-ttl-main .header-ttl-main-exp {
+          font-size: 0.7rem; }
+    .wrap .header .header-sub {
+      font-size: 0.9rem;
+      line-height: 130%; }
   .wrap .footer {
     width: 100%;
     height: 235px;
