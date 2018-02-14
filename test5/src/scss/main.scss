@@ -53,6 +53,7 @@
         left: 29px;
         display: block;
         content: '';
+        transition: .3s;
       }
       
       &:before {
@@ -69,15 +70,42 @@
         height: 5px;
         top: 39px;
       }
+
       &:hover {
         background: #fff;
         
-        &:before {
-          background: #000;
+        &:before { background: #000; }
+        &:after { border-color: #000; }
+      }
+    }
+    
+    &.open {
+      .header-navBtn {
+        background: #fff;
+        
+        @mixin navOpenBorder {
+          width: 22px;
+          height: 2px;
+          position: absolute;
+          top: 39px;
+          left: 29px;
+          display: block;
+          content: '';
+          background: #111;
+          border: none;
         }
         
+        &:before {
+          @include navOpenBorder;
+          transform: rotate(-45deg);
+        }
         &:after {
-          border-color: #000;
+          @include navOpenBorder;
+          transform: rotate(45deg);
+        }
+        
+        &:hover {
+          background: #666;
         }
       }
     }

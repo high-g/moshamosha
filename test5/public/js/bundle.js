@@ -9024,7 +9024,12 @@ module.exports = function (regExp, replace) {
 /* 328 */
 /***/ (function(module, exports) {
 
+var navBtn = document.getElementById('header-navBtn');
+var header = document.getElementById('header');
 
+navBtn.addEventListener('click', function (event) {
+  header.classList.toggle('open');
+});
 
 /***/ })
 /******/ ]);

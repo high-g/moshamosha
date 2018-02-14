@@ -86,6 +86,7 @@ table {
         left: 29px;
         display: block;
         content: '';
+        transition: .3s;
         border: none;
         background: #fff;
         height: 2px;
@@ -96,6 +97,7 @@ table {
         left: 29px;
         display: block;
         content: '';
+        transition: .3s;
         border-top: solid 2px #fff;
         border-bottom: solid 2px #fff;
         height: 5px;
@@ -106,6 +108,32 @@ table {
           background: #000; }
         .wrap .header .header-navBtn:hover:after {
           border-color: #000; }
+    .wrap .header.open .header-navBtn {
+      background: #fff; }
+      .wrap .header.open .header-navBtn:before {
+        width: 22px;
+        height: 2px;
+        position: absolute;
+        top: 39px;
+        left: 29px;
+        display: block;
+        content: '';
+        background: #111;
+        border: none;
+        transform: rotate(-45deg); }
+      .wrap .header.open .header-navBtn:after {
+        width: 22px;
+        height: 2px;
+        position: absolute;
+        top: 39px;
+        left: 29px;
+        display: block;
+        content: '';
+        background: #111;
+        border: none;
+        transform: rotate(45deg); }
+      .wrap .header.open .header-navBtn:hover {
+        background: #666; }
   .wrap .footer {
     width: calc(100% - 80px);
     height: 175px;
