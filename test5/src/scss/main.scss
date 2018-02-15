@@ -1,5 +1,9 @@
 @import '~reset-css/reset.css';
 
+* {
+  box-sizing: border-box;
+}
+
 .wrap {
   width: 100%;
   font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
@@ -112,12 +116,24 @@
   }
   
   .main {
-    
+    overflow: hidden;
+    background: #fff;
+
+    .main-section {
+      padding: 110px 80px 120px;
+      max-width: 1120px;
+      margin: auto;
+    }
+
+    .main-lead {
+      background: #fff;
+      
+    }
   }
   
   .footer {
-    width: calc(100% - 80px);
-    height: 175px;
+    width: 100%;
+    height: 235px;
     background: #222;
     color: #999;
     padding: 60px 0 0 80px;
