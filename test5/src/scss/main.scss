@@ -15,33 +15,33 @@
     background: #222;
     color:#fff;
     
-    .header-ttl {
+    &-ttl {
       position: absolute;
       top: 80px;
       left: 80px;
       
-      .header-ttl-main {
+      &-main {
         font-weight: bold;
         margin-bottom: 20px;
         
-        .header-ttl-main-catch {
+        &-catch {
           font-size: 6rem;
           margin-bottom: 15px;
         }
         
-        .header-ttl-main-exp {
+        &-exp {
           font-size: 0.7rem;
         }
       }
     }
     
-    .header-sub {
+    &-sub {
       font-size: 0.9rem;
       line-height: 150%;
       letter-spacing: 0.1rem;
     }
     
-    .header-navBtn {
+    &-navBtn {
       width: 80px;
       height: 80px;
       position: absolute;
@@ -119,13 +119,13 @@
     overflow: hidden;
     background: #fff;
 
-    .main-section {
+    &-section {
       padding: 110px 80px 120px;
       max-width: 1120px;
       margin: auto;
     }
 
-    .main-lead {
+    &-lead {
       background: #fff;
       
     }
@@ -138,11 +138,11 @@
     color: #999;
     padding: 60px 0 0 80px;
     
-    .footer-menu {
+    &-menu {
       font-size: 0.7rem;
       margin-bottom: 70px;
       
-      .footer-menu-item {
+      &-item {
         display: inline-block;
         transition: .3s;
         
@@ -164,13 +164,13 @@
       }
     }
     
-    .footer-ttl {
+    &-ttl {
       font-weight: bold;
       font-size: 1.6rem;
       margin-bottom: 0.5rem;
     }
     
-    .footer-copy {
+    &-copy {
       font-size: 0.8rem;
     }
   }

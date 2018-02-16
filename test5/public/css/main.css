@@ -58,23 +58,23 @@ table {
     height: 100vh;
     background: #222;
     color: #fff; }
-    .wrap .header .header-ttl {
+    .wrap .header-ttl {
       position: absolute;
       top: 80px;
       left: 80px; }
-      .wrap .header .header-ttl .header-ttl-main {
+      .wrap .header-ttl-main {
         font-weight: bold;
         margin-bottom: 20px; }
-        .wrap .header .header-ttl .header-ttl-main .header-ttl-main-catch {
+        .wrap .header-ttl-main-catch {
           font-size: 6rem;
           margin-bottom: 15px; }
-        .wrap .header .header-ttl .header-ttl-main .header-ttl-main-exp {
+        .wrap .header-ttl-main-exp {
           font-size: 0.7rem; }
-    .wrap .header .header-sub {
+    .wrap .header-sub {
       font-size: 0.9rem;
       line-height: 150%;
       letter-spacing: 0.1rem; }
-    .wrap .header .header-navBtn {
+    .wrap .header-navBtn {
       width: 80px;
       height: 80px;
       position: absolute;
@@ -83,7 +83,7 @@ table {
       background: #000;
       cursor: pointer;
       transition: .3s; }
-      .wrap .header .header-navBtn:before {
+      .wrap .header-navBtn:before {
         width: 22px;
         position: absolute;
         left: 29px;
@@ -94,7 +94,7 @@ table {
         background: #fff;
         height: 2px;
         top: 32px; }
-      .wrap .header .header-navBtn:after {
+      .wrap .header-navBtn:after {
         width: 22px;
         position: absolute;
         left: 29px;
@@ -105,11 +105,11 @@ table {
         border-bottom: solid 2px #fff;
         height: 5px;
         top: 39px; }
-      .wrap .header .header-navBtn:hover {
+      .wrap .header-navBtn:hover {
         background: #fff; }
-        .wrap .header .header-navBtn:hover:before {
+        .wrap .header-navBtn:hover:before {
           background: #000; }
-        .wrap .header .header-navBtn:hover:after {
+        .wrap .header-navBtn:hover:after {
           border-color: #000; }
     .wrap .header.open .header-navBtn {
       background: #fff; }
@@ -140,11 +140,11 @@ table {
   .wrap .main {
     overflow: hidden;
     background: #fff; }
-    .wrap .main .main-section {
+    .wrap .main-section {
       padding: 110px 80px 120px;
       max-width: 1120px;
       margin: auto; }
-    .wrap .main .main-lead {
+    .wrap .main-lead {
       background: #fff; }
   .wrap .footer {
     width: 100%;
@@ -152,32 +152,32 @@ table {
     background: #222;
     color: #999;
     padding: 60px 0 0 80px; }
-    .wrap .footer .footer-menu {
+    .wrap .footer-menu {
       font-size: 0.7rem;
       margin-bottom: 70px; }
-      .wrap .footer .footer-menu .footer-menu-item {
+      .wrap .footer-menu-item {
         display: inline-block;
         transition: .3s; }
-        .wrap .footer .footer-menu .footer-menu-item:first-child {
+        .wrap .footer-menu-item:first-child {
           margin-right: 10px; }
-        .wrap .footer .footer-menu .footer-menu-item:not(:first-child) {
+        .wrap .footer-menu-item:not(:first-child) {
           margin: 0 10px; }
-        .wrap .footer .footer-menu .footer-menu-item a {
+        .wrap .footer-menu-item a {
           transition: .3s;
           text-decoration: none; }
-        .wrap .footer .footer-menu .footer-menu-item a:link {
+        .wrap .footer-menu-item a:link {
           color: #999; }
-        .wrap .footer .footer-menu .footer-menu-item a:visited {
+        .wrap .footer-menu-item a:visited {
           color: #999; }
-        .wrap .footer .footer-menu .footer-menu-item a:hover {
+        .wrap .footer-menu-item a:hover {
           color: #fff; }
-        .wrap .footer .footer-menu .footer-menu-item a:active {
+        .wrap .footer-menu-item a:active {
           color: #999; }
-    .wrap .footer .footer-ttl {
+    .wrap .footer-ttl {
       font-weight: bold;
       font-size: 1.6rem;
       margin-bottom: 0.5rem; }
-    .wrap .footer .footer-copy {
+    .wrap .footer-copy {
       font-size: 0.8rem; }
 
 /*# sourceMappingURL=main.css.map*/
