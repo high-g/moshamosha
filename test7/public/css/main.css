@@ -48,12 +48,14 @@ table {
 }* {
   box-sizing: border-box; }
 
-#index .header {
-  width: 100%;
-  margin: 0 auto; }
-  #index .header-logo {
-    font-family: Zapfino;
-    font-weight: bold;
-    font-size: 1.5em; }
+#index {
+  width: 100%; }
+  #index .header {
+    width: 1024px;
+    margin: 0 auto; }
+    #index .header-logo {
+      font-family: Zapfino;
+      font-weight: bold;
+      font-size: 1.5em; }
 
 /*# sourceMappingURL=main.css.map*/
