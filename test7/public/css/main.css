@@ -66,5 +66,8 @@ table {
       justify-content: space-between; }
       #index .header-nav .grobalNav-list-item {
         padding: 0 20px; }
+  #index .main {
+    width: 1024px;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map*/
