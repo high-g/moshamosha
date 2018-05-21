@@ -9,7 +9,11 @@
 
   .header {
     width: 1024px;
+    height: 100px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
     &-logo {
       font-family: Zapfino;
@@ -18,7 +22,16 @@
     }
 
     &-nav {
-      
+      .grobalNav {
+        &-list {
+          display: flex;
+          justify-content: space-between;
+
+          &-item {
+            padding: 0 20px;
+          }
+        }
+      }
     }
   }
 }
