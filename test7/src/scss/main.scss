@@ -48,10 +48,25 @@ $all-width: 950px;
       font-size: 6rem;
       padding-bottom: 0.5em;
     }
+
+    &-explain {
+      line-height: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &-btn {
+      padding: 18px 43px;
+      border-radius: 5px;
+      font-size: 1.3rem;
+      background: #009cd3;
+      color: #fff;
+      border: none;
+    }
   }
 
   .footer {
     width: $all-width;
-    margin: 0 auto;
+    font-size: 0.8rem;
+    margin: 0 auto 30px;
   }
 }
