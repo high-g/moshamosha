@@ -1,15 +1,19 @@
 @import '~reset-css/reset.css';
 
+$all-width: 950px;
+
 * {
   box-sizing: border-box;
 }
 
 #index {
   width: 100%;
+  background : #000;
+  color: #fff;
 
   .header {
-    width: 1024px;
-    height: 100px;
+    width: $all-width;
+    height: 90px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -36,7 +40,18 @@
   }
 
   .main {
-    width: 1024px;
+    width: $all-width;
+    margin: 0 auto;
+    padding: 150px 0 200px;
+
+    &-title {
+      font-size: 6rem;
+      padding-bottom: 0.5em;
+    }
+  }
+
+  .footer {
+    width: $all-width;
     margin: 0 auto;
   }
 }
