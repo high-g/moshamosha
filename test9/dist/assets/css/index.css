@@ -49,5 +49,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-#wrap {
-  width: 970px; }
+header {
+  min-width: 980px;
+  margin: 0 auto; }
+
+main {
+  min-width: 980px; }
+
+footer {
+  min-width: 980px; }

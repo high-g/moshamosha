@@ -1,5 +1,16 @@
 @import '~reset-css/_reset.scss';
 
-#wrap {
-    width: 970px;
+$all_width: 980px;
+
+header {
+  min-width: $all_width;
+  margin: 0 auto;
+}
+
+main {
+  min-width: $all_width;
+}
+
+footer {
+  min-width: $all_width;
 }
