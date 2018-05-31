@@ -9022,10 +9022,17 @@ module.exports = function (regExp, replace) {
 
 /***/ }),
 /* 328 */
-/***/ (function(module, __webpack_exports__) {
+/***/ (function(module, exports) {
 
-"use strict";
+var slider = document.querySelector('#slider');
+var circle = document.querySelector('#circle');
+var circleContent = document.querySelector('#circle-content');
 
+circle.addEventListener('click', function () {
+  slider.classList.toggle('off');
+  circle.classList.toggle('off');
+  circleContent.classList.toggle('off');
+});
 
 /***/ })
 /******/ ]);

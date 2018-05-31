@@ -1,0 +1,49 @@
+@import '~reset-css/reset.css';
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .header-menu {
+    display: flex;
+    
+    .header-menu-items {
+      margin: 0 10px 0;
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  $content-sub: 20%;
+  $content-height: 500px;
+
+  .content-sub {
+    width: $content-sub;
+    height: $content-height;
+    background: #fab;
+  }
+  
+  .content-main {
+    width: calc(95% - #{$content-sub});
+    height: $content-height;
+    background: #bfc;
+  }
+}
+
+.footer {
+  margin-top: 15px;
+  width: 100%;
+  height:50px;
+}

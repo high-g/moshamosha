@@ -45,50 +45,49 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}#main {
-  width: 500px;
-  height: 300px;
-  background: #eee;
-  position: relative; }
-  #main #slider {
-    width: 100px;
-    height: 30px;
-    border-radius: 15px;
-    background: #000;
-    position: absolute;
-    top: calc(50% - 30px);
-    left: calc(50% - 50px);
-    transition: 0.3s ease-in-out; }
-    #main #slider.off {
-      background: #999; }
-  #main #circle {
-    width: 85px;
-    height: 85px;
-    border-radius: 50px;
-    background: #fff;
-    position: absolute;
-    top: calc(50% - 60px);
-    left: calc(50% - 80px);
-    transition: 0.3s ease-in-out; }
-    #main #circle:hover {
-      cursor: pointer; }
-    #main #circle.off {
-      left: 50%;
-      background: #fff; }
-    #main #circle #circle-content {
-      width: 20px;
-      height: 20px;
-      border: 8px solid #000;
-      border-radius: 20px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      transition: 0.3s ease-in-out; }
-      #main #circle #circle-content.off {
-        border-color: #999;
-        width: 0; }
+}* {
+  box-sizing: border-box; }
+
+#index {
+  width: 100%;
+  background: #000;
+  color: #fff; }
+  #index .header {
+    width: 950px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    #index .header-logo {
+      font-family: Zapfino;
+      font-weight: bold;
+      font-size: 1.5em; }
+    #index .header-nav .grobalNav-list {
+      display: flex;
+      justify-content: space-between; }
+      #index .header-nav .grobalNav-list-item {
+        padding: 0 20px; }
+  #index .main {
+    width: 950px;
+    margin: 0 auto;
+    padding: 150px 0 200px; }
+    #index .main-title {
+      font-size: 6rem;
+      padding-bottom: 0.5em; }
+    #index .main-explain {
+      line-height: 2rem;
+      margin-bottom: 1.5rem; }
+    #index .main-btn {
+      padding: 18px 43px;
+      border-radius: 5px;
+      font-size: 1.3rem;
+      background: #009cd3;
+      color: #fff;
+      border: none; }
+  #index .footer {
+    width: 950px;
+    font-size: 0.8rem;
+    margin: 0 auto 30px; }
 
 /*# sourceMappingURL=main.css.map*/

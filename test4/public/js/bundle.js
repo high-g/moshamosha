@@ -9024,14 +9024,11 @@ module.exports = function (regExp, replace) {
 /* 328 */
 /***/ (function(module, exports) {
 
-var slider = document.querySelector('#slider');
-var circle = document.querySelector('#circle');
-var circleContent = document.querySelector('#circle-content');
+var navBtn = document.getElementById('header-navBtn');
+var header = document.getElementById('header');
 
-circle.addEventListener('click', function () {
-  slider.classList.toggle('off');
-  circle.classList.toggle('off');
-  circleContent.classList.toggle('off');
+navBtn.addEventListener('click', function (event) {
+  header.classList.toggle('open');
 });
 
 /***/ })

@@ -9022,14 +9022,10 @@ module.exports = function (regExp, replace) {
 
 /***/ }),
 /* 328 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__) {
 
-var navBtn = document.getElementById('header-navBtn');
-var header = document.getElementById('header');
+"use strict";
 
-navBtn.addEventListener('click', function (event) {
-  header.classList.toggle('open');
-});
 
 /***/ })
 /******/ ]);
