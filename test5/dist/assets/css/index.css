@@ -51,7 +51,12 @@ table {
 
 header {
   min-width: 980px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 600px;
+  background: #00f; }
+  header .box {
+    width: 300px;
+    background: #0f0; }
 
 main {
   min-width: 980px; }

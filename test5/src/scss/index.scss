@@ -5,6 +5,13 @@ $all_width: 980px;
 header {
   min-width: $all_width;
   margin: 0 auto;
+  height: 600px;
+  background: #00f;
+
+  .box {
+    width: 300px;
+    background: #0f0;
+  }
 }
 
 main {
