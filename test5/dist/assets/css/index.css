@@ -51,31 +51,44 @@ table {
 
 header {
   min-width: 980px;
-  margin: 0 auto;
   height: 600px;
-  background: #00f;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center; }
-  header .box {
+  header .text_box {
     color: #fff;
-    text-align: center; }
-    header .box .catch {
+    text-align: center;
+    z-index: 100; }
+    header .text_box .catch {
       margin-bottom: 12px;
       line-height: 1.2; }
-    header .box .title {
+    header .text_box .title {
       font-size: 5rem;
       margin-bottom: 12px; }
-    header .box .power {
+    header .text_box .power {
       font-size: 0.8rem;
       margin-bottom: 12px; }
-    header .box .logo {
+    header .text_box .logo {
       font-size: 1.3rem;
       margin-bottom: 12px; }
-    header .box .app li {
+    header .text_box .app li {
       display: inline-block; }
-      header .box .app li img {
+      header .text_box .app li img {
         width: 200px; }
+  header .img_box {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    header .img_box .img_area {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity .5s;
+      opacity: 0; }
+      header .img_box .img_area.show {
+        opacity: 1; }
 
 main {
   min-width: 980px; }

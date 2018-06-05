@@ -4,16 +4,17 @@ $all_width: 980px;
 
 header {
   min-width: $all_width;
-  margin: 0 auto;
   height: 600px;
-  background: #00f;
+  margin: 0 auto;
+  background: rgba(0,0,0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .box {
+  .text_box {
     color: #fff;
     text-align: center;
+    z-index: 100;
 
     .catch {
       margin-bottom: 12px;
@@ -42,6 +43,24 @@ header {
         img {
           width: 200px;
         } 
+      }
+    }
+  }
+
+  .img_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .img_area {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity .5s;
+      opacity: 0;
+
+      &.show {
+        opacity: 1;
       }
     }
   }
