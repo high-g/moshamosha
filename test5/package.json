@@ -1,7 +1,8 @@
 {
   "scripts": {
     "gulp": "gulp",
-    "webpack": "webpack"
+    "build": "webpack",
+    "watch": "webpack -w"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
