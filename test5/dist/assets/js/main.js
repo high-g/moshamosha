@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\nconst animationHero = () => {\n    const class_image_area = document.getElementsByClassName('img_area');\n    console.log(class_image_area)\n}\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("const class_image_area = document.querySelectorAll('.img_area');\n\nconst animationHero = () => {\n    let cnt = 0;\n    for(let image_area of class_image_area) {\n        if(image_area.classList.contains('show')) {\n            image_area.classList.remove('show');\n            setShow(cnt)\n            return;\n        }\n        cnt++;\n    }\n}\n\nconst setShow = (num) => {\n    const check_arr = [1, 2, 0];\n    const target_key = check_arr[num];\n    class_image_area[target_key].classList.add('show');\n}\n\nsetInterval(animationHero, 10000);\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

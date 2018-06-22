@@ -56,7 +56,7 @@ header {
       position: absolute;
       top: 0;
       left: 0;
-      transition: opacity .5s;
+      transition: opacity 5s;
       opacity: 0;
 
       &.show {
