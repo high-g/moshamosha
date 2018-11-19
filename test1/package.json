@@ -1,11 +1,8 @@
 {
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch"
   },
-  "license": "ISC",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "jquery": "^3.2.1",
