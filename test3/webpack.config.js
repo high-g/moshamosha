@@ -9,7 +9,7 @@ module.exports = [
       js: ['babel-polyfill', './src/babel/entry.js']
     },
     output: {
-      path: `${__dirname}/public/js/`,
+      path: `${__dirname}/dist/js/`,
       filename: 'bundle.js'
     },
     module: {
@@ -39,7 +39,7 @@ module.exports = [
       'main': './src/scss/main.scss',
     },
     output: {
-      path: `${__dirname}/public/css/`,
+      path: `${__dirname}/dist/css/`,
       filename: '[name].css'
     },
     devtool: 'source-map',

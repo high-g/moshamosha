@@ -9,7 +9,7 @@ module.exports = [
       js: ['babel-polyfill', './src/babel/entry.js']
     },
     output: {
-      path: `${__dirname}/public/js/`,
+      path: `${__dirname}/dist/js/`,
       filename: 'bundle.js'
     },
     module: {
@@ -36,7 +36,7 @@ module.exports = [
   // scss
   {
     entry: {
-      'main': './src/scss/main.scss',
+      'main': './src/dist/main.scss',
     },
     output: {
       path: `${__dirname}/public/css/`,
