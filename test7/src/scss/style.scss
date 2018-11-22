@@ -23,6 +23,16 @@ body {
   overflow-y: scroll; 
 }
 
+header {
+  width: 100%;
+  z-index: 9999;
+
+  .logo {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 main {
   .box-wrapper {
     width: 700px;
