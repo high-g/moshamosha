@@ -52,14 +52,18 @@ header {
     top: 0;
     font-size: 1.4rem;
     font-weight: 600;
-    padding: 100px 180px 0 50px;
-    background-color: rgba(180, 219, 219, 0.8);
-    width: 480px;
+    padding: 125px 200px 0 50px;
+    background-color: rgba(192, 212, 219, 0.9);
+    width: 430px;
     height: 100vh;
 
     li {
       padding-bottom: 7px;
-      letter-spacing: 0.3rem;
+      letter-spacing: 0.15rem;
+
+      &.target {
+        color: #e38580;
+      }
     }
 
     .is-active {
@@ -68,15 +72,45 @@ header {
   }
 
   .burger {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: #fff;
     border: 1px solid #000;
     border-radius: 40px;
     position: fixed;
     top: 50px;
-    right: 60px;
+    right: 50px;
     z-index: 10000;
+
+    span {
+      background: #333;
+      width: 20px;
+      height: 1px;
+      position: absolute;
+      top: calc(50% - (1px / 2));
+      left: 20px;
+      transition: all .2s;
+      transform-origin: center;
+
+      &.top{
+        transform: translate(0, -7px);
+      }
+      &.bottom{
+        transform: translate(0, 7px);
+      }
+    }
+
+    &.act {
+      .top {
+
+      }
+      .middle {
+        transform: translate(40px, 0);
+      }
+      .bottom {
+
+      }
+    }
   }
 }
 
