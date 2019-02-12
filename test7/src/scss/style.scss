@@ -32,21 +32,21 @@ header {
     height: 200px;
     padding: 60px 50px;
 
-    &-exp{
+    &_exp{
       font-size: 0.5rem;
       letter-spacing: 0.06rem;
       font-weight: 600;
     }
 
-    &-title {
+    &_title {
       letter-spacing: 1.1rem;
       font-size: 1.3rem;
       font-weight: 600;
     }
   }
 
-  .menu-group {
-    //display: none;
+  #menuGroup {
+    display: none;
     position: fixed;
     right: 0;
     top: 0;
@@ -66,12 +66,12 @@ header {
       }
     }
 
-    .is-active {
+    &.is-active {
       display: block;
     }
   }
 
-  .burger {
+  #burgerMenu {
     width: 60px;
     height: 60px;
     background: #fff;
@@ -115,9 +115,52 @@ header {
 }
 
 main {
-  .box-wrapper {
-    width: 700px;
-    height: 466px;
-    background: url('./images/hero.jpg') no-repeat;
+  #hero {
+    position: relative;
+    margin: 0 100px 0 auto;
+    width: 60%;
+    height: 690px;
+
+    .inner {
+      position: relative;
+
+      .main, .sub {
+        position: absolute;
+        left: -280px;
+      }
+
+      .main {
+        top: 50px;
+
+        &_title {
+          font-size: 5rem;
+          letter-spacing: 1.5rem;
+        }
+
+        &_exp {
+          font-weight: 600;
+          font-size: 0.9rem;
+        }
+      }
+
+      .sub {
+        top: 350px;
+
+        p {
+          letter-spacing: 0.35rem;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .boxWrapper {
+      width: 700px;
+      height: 466px;
+      background: url('./images/hero.jpg') no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 }
