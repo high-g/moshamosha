@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body style="background: #000;">
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper" style="display: none;">
     <div id="scene1">
       <div id="line1" class="line"></div>
       <div id="line2" class="line"></div>
@@ -16,9 +16,21 @@
       <div class="text-wrap">
         <p id="text1">MOSHAMOSHA</p>
       </div>
+      <div class="text-wrap2">
+        <p id="text2">PRODUCTION</p>
+      </div>
     </div>
 
-    <div id="scene2"></div>
+    <div id="scene2">
+      <div class="s2-image-area">
+        <div id="s2ImageWrap">
+          <img src="./images/image1.jpg" id="s2Image1">
+        </div>
+      </div>
+
+      <div id="s2Blue"></div>
+      <div id="s2Rect"></div>
+    </div>
   </div>
   <script src="bundle.js"></script>
 </body>
