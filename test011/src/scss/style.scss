@@ -46,9 +46,14 @@ html, body {
 }
 
 #scene2 {
+  &.zoom {
+    transition: 120s;
+    transform: scale(2);
+  }
+
   &.on {
     transition: 2s;
-    transform: translateY(-800px);
+    transform: translateY(-1000px);
   }
 }
 
@@ -57,7 +62,7 @@ html, body {
   background: #fff;
 }
 
-#line1 {
+.line1 {
   width: 300px;
   top: -6px;
   left: 6px;
@@ -69,7 +74,7 @@ html, body {
   }
 }
 
-#line2 {
+.line2 {
   width: 300px;
   top: 206px;
   left: 94px;
@@ -79,9 +84,13 @@ html, body {
   &.on {
     transform: rotateZ(45deg) scaleX(1);
   }
+
+  &.on2 {
+    transform: rotateZ(40deg) scaleX(1);
+  }
 }
 
-#line3 {
+.line3 {
   width: 593px;
   top: 418px;
   left: -287px;
@@ -151,7 +160,7 @@ html, body {
   overflow: hidden;
 
   &.on {
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
     transform: translateX(0);
   }
 }
@@ -160,24 +169,55 @@ html, body {
   transform: translateX(100%);
 
   &.on {
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
     transform: translateX(0);
   }
 }
 
-#s2Blue {
-  width: 900px;
+.blueRect {
   height: 300px;
   background: #00bfff;
   opacity: 0.3;
-  bottom: -280px;
-  left: -100px;
+  transform-origin: left;
+}
+
+#s2Blue {
+  width: 500px;
+  bottom: -200px;
+  left: -50px;
   transform: rotate(-50deg) translateX(-735px);
+
+  &.on {
+    transition: .5s;
+    transform: rotate(-50deg) translateX(0);
+  }
+}
+
+#s2Blue2 {
+  width: 300px;
+  bottom: 188px;
+  left: 274px;
+  transform: rotate(-50deg) translateX(-735px);
+
+  &.on {
+    transition: .5s;
+    transform: rotate(-50deg) translateX(0);
+  }
+}
+
+#s2Red {
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+  opacity: 0.5;
+  top: 5px;
+  left: 40px;
+  transform: rotate(-50deg) translateY(-300px);
   transform-origin: left;
 
   &.on {
-    transition: 2s;
-    transform: rotate(-50deg) translateX(0);
+    transition: .5s;
+    transform: rotate(-50deg) translateY(0);
   }
 }
 
@@ -192,7 +232,44 @@ html, body {
   top: 20%;
 
   &.on {
-    transition: 2s ease-in-out;
+    transition: .5s ease-in-out;
     transform: rotate(-50deg) translate(0, 0);
+  }
+}
+
+.s2line1 {
+  width: 300px;
+  top: 0;
+  left: 73px;
+  transform: rotateZ(-50deg) scaleX(0);
+  transform-origin: right;
+
+  &.on {
+    transform: rotateZ(-50deg) scaleX(1.105);
+  }
+}
+
+.s2line2 {
+  width: 300px;
+  top: 254px;
+  left: 159px;
+  transform: rotateZ(40deg) scaleX(0);
+  transform-origin: left;
+
+  &.on {
+    transform: rotateZ(40deg) scaleX(1);
+  }
+}
+
+.s2line3 {
+  width: 593px;
+  top: 447px;
+  left: -204px;
+  transform: rotateZ(130deg) scaleX(0);
+  transform-origin: right;
+
+  &.on {
+    transition: .5s ease-out;
+    transform: rotateZ(130deg) scaleX(1);
   }
 }
