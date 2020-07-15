@@ -21,11 +21,15 @@ $(function() {
     setTimeout(() => {$('#s2Blue2').addClass('on') }, 1800 + num_last1);
     setTimeout(() => {$('#s2Red').addClass('on') }, 1800 + num_last1);
 
+    setTimeout(() => {$('#s2line4').addClass('on') }, 1800 + num_last1);
     setTimeout(() => {$('#s2line1').addClass('on') }, 1800 + num_last1);
     setTimeout(() => {$('#s2line2').addClass('on') }, 2000 + num_last1);
     setTimeout(() => {$('#s2line3').addClass('on') }, 2200 + num_last1);
-    //setTimeout(() => {$('#scene2').addClass('zoom') }, 2000 + num_last1);
-    //setTimeout(() => {$('#scene2').addClass('on') }, 5000 + num_last1);
+
+    setTimeout(() => {$('#circleArea').addClass('on')}, 1800 + num_last1);
+    setTimeout(() => {$('#text3').addClass('on')}, 2400 + num_last1);
+    setTimeout(() => {$('#scene2').addClass('zoom') }, 3000 + num_last1);
+    setTimeout(() => {$('#scene2').addClass('on') }, 6000 + num_last1);
   }
 
   setTimeout(init, 500)
